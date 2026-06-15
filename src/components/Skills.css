@@ -1,0 +1,50 @@
+.skills-grid {
+  max-width: 56rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.skill-category {
+  margin-bottom: 0.5rem;
+}
+
+.skills-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  justify-content: center;
+}
+
+.skill-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.65rem 1.25rem;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  transition: border-color 0.2s, color 0.2s, background-color 0.2s, transform 0.2s;
+}
+
+.skill-pill-icon {
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  color: var(--color-primary);
+  transition: color 0.2s, transform 0.2s;
+}
+
+.skill-pill:hover .skill-pill-icon {
+  color: var(--color-primary);
+  transform: scale(1.1);
+}
+
+.skill-pill:hover {
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+  background-color: rgba(245, 158, 11, 0.08);
+}
