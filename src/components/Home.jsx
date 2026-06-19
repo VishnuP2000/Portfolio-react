@@ -7,6 +7,16 @@ import { FaLinkedin, FaGithub } from "react-icons/fa";
 import TiltedCard from "./TiltedCard";
 import "./Home.css";
 
+// const containerVariants = {
+//   hidden: { opacity: 0 },
+//   visible: {
+//     opacity: 1,
+//     transition: {
+//       staggerChildren: 0.15,
+//       delayChildren: 0.1,
+//     },
+//   },
+// };
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
