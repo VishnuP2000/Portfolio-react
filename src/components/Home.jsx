@@ -4,7 +4,7 @@ import { motion as Motion, AnimatePresence } from "framer-motion";
 import Resume from "../assets/resume.pdf";
 import vishnuImg from "../assets/vishnuimg.jpg";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import TiltedCard from "./TiltedCard";
+import TiltedCard from "../components/Tiltedcard";
 import "./Home.css";
 
 // const containerVariants = {

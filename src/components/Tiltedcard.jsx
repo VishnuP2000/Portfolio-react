@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 
 function TiltedCard({ imageSrc }) {
+  console.log('motion',motion)
   return (
     <div style={{ perspective: "1000px" }}>
       <motion.div
