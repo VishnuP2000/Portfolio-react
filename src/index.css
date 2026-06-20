@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #0a0a0f;
+  --color-surface: #14141f;
+  --color-border: #2a2a3a;
+  --color-text: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-primary: #f59e0b;
+  --color-secondary: #8b5cf6;
+  --color-accent: #38bdf8;
+  --font-sans: "Inter", system-ui, sans-serif;
+}
+
+:root {
+  --color-bg: #0a0a0f;
+  --color-surface: #14141f;
+  --color-border: #2a2a3a;
+  --color-text: #f1f5f9;
+  --color-muted: #94a3b8;
+  --color-primary: #f59e0b;
+  --color-secondary: #8b5cf6;
+  --color-accent: #38bdf8;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Inter", system-ui, sans-serif;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.hero-gradient {
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(ellipse 80% 60% at 20% 40%, rgba(139, 92, 246, 0.15), transparent),
+    radial-gradient(ellipse 60% 50% at 80% 60%, rgba(245, 158, 11, 0.08), transparent);
+}
+
+.page-section {
+  min-height: 100vh;
+  padding: 6rem 1.5rem 3rem;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+.page-gradient {
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(ellipse 70% 50% at 50% 0%, rgba(139, 92, 246, 0.12), transparent),
+    radial-gradient(ellipse 50% 40% at 80% 80%, rgba(245, 158, 11, 0.06), transparent);
+}
+
+.page-title {
+  font-size: clamp(2.25rem, 5vw, 3.75rem);
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-primary);
+  margin: 0 0 0.5rem;
+}
+
+.page-subtitle {
+  font-size: 1.125rem;
+  text-align: center;
+  color: var(--color-muted);
+  margin: 0 auto 2.5rem;
+  max-width: 36rem;
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--color-primary);
+  margin: 0 0 1.25rem;
+}
+
+.glow-ring {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.glow-ring::before {
+  content: "";
+  position: absolute;
+  inset: -12px;
+  border-radius: 1.25rem;
+  background: radial-gradient(
+    circle,
+    rgba(245, 158, 11, 0.25) 0%,
+    rgba(139, 92, 246, 0.15) 50%,
+    transparent 70%
+  );
+  z-index: -1;
+  filter: blur(20px);
+}
