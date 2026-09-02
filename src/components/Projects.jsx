@@ -3,6 +3,7 @@ import netflixImg from "../assets/netflix.png";
 import todoImg from "../assets/todo.png";
 import usmImg from "../assets/usm.png";
 import furnitureImg from "../assets/furniture.png";
+import chatApp from "../assets/chatApp.png";
 import { containerVariants, itemVariants, cardVariants } from "../motionVariants";
 import "./Projects.css";
 
@@ -34,6 +35,13 @@ function Projects() {
       title: "furniture E-comm",
       images: furnitureImg,
       ProjectLinks: "https://frenzy-ykgi.onrender.com",
+      techs: ["HTML", "React", "NodeJs"],
+      description: "Full-stack e-commerce platform for furniture with cart and checkout.",
+    },
+        {
+      title: "chat-App",
+      images: chatApp,
+      ProjectLinks: "https://chat-app-cmrb.vercel.app/",
       techs: ["HTML", "React", "NodeJs"],
       description: "Full-stack e-commerce platform for furniture with cart and checkout.",
     },
