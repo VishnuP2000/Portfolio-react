@@ -42,8 +42,8 @@ function Projects() {
       title: "chat-App",
       images: chatApp,
       ProjectLinks: "https://chat-app-cmrb.vercel.app/",
-      techs: ["HTML", "React", "NodeJs"],
-      description: "Full-stack e-commerce platform for furniture with cart and checkout.",
+      techs: ["React", "NodeJs","MongoDb","Typescript","Socket.IO","JWT"],
+      description: "A real-time MERN chat app with secure authentication, user connections, requests, and one-to-one messaging.",
     },
   ];
 
